@@ -12,5 +12,13 @@ export default () => (
     	<Skills/>
     	<Projects/>
     	<Contact/>
+
+    	<style jsx>{`
+				Skills {
+					
+				}
+
+    		`}
+		</style>
     </div>
 )

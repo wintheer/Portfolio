@@ -1,1 +1,0 @@
-{"version":3,"file":"static/webpack/static/development/pages/index.js.88d1ac91bfe7fde9ce9b.hot-update.js","sources":["webpack:///./pages/skills.js"],"sourcesContent":["export default function Skills() {\n  return (\n    <div className=\"\">\n\n    </div>\n  )\n}"],"mappings":";;;;;;;;;;;;;;;AAAA;AACA;AACA;AAAA;AAIA;;;;A","sourceRoot":""}
