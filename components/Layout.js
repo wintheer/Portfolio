@@ -1,21 +1,24 @@
 import Navigation from './Navigation'
+import Head from 'next/head'
 
 export default function Layout(props) {
   return (
-  	<header>
+  	<div>
+      <Head>
+        <title>Frederik Winther</title>
+      </Head>
 	    <Navigation/>
 	    <style jsx global> {`
-          body {
+          body, html {
             margin: 0;
             height: 100%;
           }
 
-          html {
-          	margin: 60px 0 0 0;
+          #__next {
           	height: 100%;
           }
       `}
       </style>
-    </header>
+    </div>
   )
 }

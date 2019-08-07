@@ -1,30 +1,30 @@
-export default function Contect() {
+export default function Contact() {
 	return (
-		<div>
-			<div className="ExternalLinks">
-				<div className="LinkedIn">
+		<div id="contact" className="contact_container">
+			<div className="external_links">
+				<div className="linked_in">
 
 				</div>
 
-				<div className="GitHub">
+				<div className="github">
 					
 				</div>
 
-				<div className="Mail">
+				<div className="mail">
 					
 				</div>
 			</div>
 
-			<div className="Copyright">
+			<div className="copyright">
 					<h2>Built by Frederik Winther</h2>
 				</div>
 
 			<style jsx>{`
-				.ExternalLinks {
+				.external_links {
 
 				}
 
-				.Copyright {
+				.copyright {
 					text-align: center;
 				}
     		`}

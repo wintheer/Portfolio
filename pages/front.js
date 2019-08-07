@@ -1,51 +1,59 @@
-export default function Front() {
-  return (
-  	<div className="box">
+import React from 'react';
 
-  		<div className="front">
-  			<div className="overlay"></div>
-  			<h1>Designer, Full Stack Developer & Triathlete</h1>
-  		</div>
-    	
-    	<style jsx>{`
-    		.box {
-    			height: 100%;
-    		}
+class Front extends React.Component {
 
-    		.front {
-    			position: relative;
-    			background-image: url("../static/Front_image.png");
-    			height: 100%;
-    			width: 100%;
-    			display: table;
-    			background-position: center;
-  				background-repeat: no-repeat;
-  				background-size: cover;
-  				align-items: center;
-  				z-index: -1;
-
-    		}
-
-    		.overlay {
-    			position: relative;
-    			background: rgba(0, 0, 0, .7);
-    			z-index: 0;
-    			position: absolute;
-			    width: 100%;
-			    height: 100%;
-    			display: block;
-    		}
-
-    		h1 {
-    			text-align: center;
-    			margin: 0;
-    			display: table-cell; 
-    			vertical-align: middle;
-    			z-index: 10;
-    			color: white;
-    		}
-    	`}
-    	</style>
-    </div>
-  )
+	render() {
+		return (
+			<div id="front" className="front_container">
+	
+				<div className="image_container">
+					<div className="image"></div>
+					<h1>Designer, Full Stack Developer <br/> & Triathlete</h1>
+				</div>
+				
+				<style jsx>{`
+					.front_container {
+						height: 100%;
+					}
+	
+					.image_container {
+						position: relative;
+						background: black;
+						height: 100%;
+						width: 100%;
+						display: table;
+						/* align-items: center; */
+						z-index: -1;
+					}
+	
+					.image {
+						opacity: .3;
+						background-image: url("../static/Front_image.png");
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						display: block;
+						background-position: center;
+						background-repeat: no-repeat;
+						background-size: cover;
+						filter: blur(1px);
+					}
+	
+					h1 {
+						font-size: 300%;
+						position: relative;
+						text-align: center;
+						margin: 0;
+						display: table-cell; 
+						vertical-align: middle;
+						z-index: 1;
+						color: white;
+					}
+				`}
+				</style>
+			</div>
+	  	)
+	}
 }
+
+export default Front;

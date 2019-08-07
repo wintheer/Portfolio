@@ -1,6 +1,6 @@
 export default function Skills() {
   return (
-    <div className="Grid">
+    <div id="skills" className="skills_container">
     	<div className="designer_container">
     		<h1>Designer</h1>
     		<ul>
@@ -9,8 +9,11 @@ export default function Skills() {
     			<ul>
     				<li>Arduino</li>
     				<li>Raspberry Pi</li>
+    				<li>3D-Printing</li>
+    				<li>Custom PCBs</li>
 				</ul>
     			<li>Sketching</li>
+    			<li>Participatory Design</li>
     			<li>Interaction Design</li>
     			<li>Adobe:</li>
     			<ul>
@@ -54,24 +57,59 @@ export default function Skills() {
     	<div className="triathlon_container">
     		<h1>Triathlete</h1>
     		<ul>
-    			<li>Karrebæksminde Triatlon (950m, 50km, 10,5km):</li>
+    			<li>Karrebæksminde Triatlon:</li>
+    			(950m, 50km, 10,5km)
     			<ul>
     				<li>1st: 3:36:45</li>
     				<li>2nd: 3:13:30</li>
     			</ul>
-    			<li>Aarhus KMD Ironman (1500m, 45km, 10km):</li>
+    			<li>Aarhus KMD Ironman:</li>
+    			(1500m, 45km, 10km)
     			<ul>
     				<li>1st: 3:06:35</li>
     			</ul>
     		</ul>
     	</div>
 
+    	<div className="tools_container">
+    		<h1>Tools & IDEs</h1>
+    		<ul>
+    			<li>IntelliJ Studio</li>
+    			<li>Android Studio</li>
+    			<li>Unity</li>
+    			<li>Visual Studio (Code)</li>
+    			<li>Git</li>
+    		</ul>
+    	</div>
+
     	<style jsx>{`
-				.Grid {
+    			h1 {
+    				margin: 10 0 0 0;
+    				text-align: center;
+    			}
+
+    			ul {
+    				list-style-type: none;
+
+    			}
+
+    			li {
+    				
+    				list-style-type: none;
+    				margin-top: 10px;
+    				font-size: 130%;
+    			}
+
+				.skills_container {
+					height: 100%;
+					background: #0c0c0c;
+					padding-top: 4vw;
+					padding-left: 15%;
+					padding-right: 15%;
 					display: grid;
 					grid-template-columns: repeat(3, 1fr);
-					grid-template-rows: repeat(4, 8vw);
-					grid-gap: 15px;
+					grid-template-rows: repeat(8, 4vw);
+					grid-gap: 20px;
 				}
 
 	    		.ProjectItem {
@@ -79,43 +117,44 @@ export default function Skills() {
 	    			width: 100%;
 	    			background: grey;
 	    			object-fit: cover;
-
 	    		}
 
 	    		.designer_container {
 	    			grid-column-start: 1;
 	    			grid-column-end: 2;
 	    			grid-row-start: 1;
-	    			grid-row-end: 4;
+	    			grid-row-end: 8;
 	    			background: grey;
-	    			padding-left: 20px;
 	    		}
 
 	    		.frontend_container {
 	    			grid-column-start: 2;
 	    			grid-column-end: 3;
 	    			grid-row-start: 1;
-	    			grid-row-end: 3;
+	    			grid-row-end: 5;
 	    			background: grey;
-	    			padding-left: 20px;
 	    		}
 
 	    		.backend_container {
 	    			grid-column-start: 2;
 	    			grid-column-end: 3;
-	    			grid-row-start: 3;
-	    			grid-row-end: 4;
+	    			grid-row-start: 5;
+	    			grid-row-end: 8;
 	    			background: grey;
-	    			padding-left: 20px;
 	    		}
 
-	    		.triathlon_container {
+	    		.tools_container {
 	    			grid-column-start: 3;
 	    			grid-column-end: 4;
 	    			grid-row-start: 1;
-	    			grid-row-end: 3;
+	    			grid-row-end: 4;
 	    			background: grey;
-	    			padding-left: 20px;
+	    		}
+
+	    		.triathlon_container {
+	    			background: grey;
+	    			grid-row-start: 4;
+	    			grid-row-end: 8;
 	    		}
 
     		`}

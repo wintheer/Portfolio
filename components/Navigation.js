@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import animateScroll from 'react-scroll'
 
 export default function Navigation() {
 	return (
@@ -17,7 +18,7 @@ export default function Navigation() {
       		<Link href="#about"><a>About</a></Link>
       		<Link href="#skills"><a>Skills</a></Link>
       		<Link href="#projects"><a>Projects</a></Link>
-      		<Link href="#contact"><a>Contact</a></Link>
+      		<Link scroll={false} href="#contact"><a>Contact</a></Link>
       		<Link href="/CV"><a>CV</a></Link>
       	</div>
       </div>
@@ -30,7 +31,7 @@ export default function Navigation() {
 	            right: 0;
 	            position: fixed;
 	            width: 100%;
-	            background: rgba(88, 95, 150, 0.6);
+	            background: rgba(255, 255, 255, 0.4);
         	}
 
         	.logo {
