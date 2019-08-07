@@ -3,7 +3,7 @@ import Head from 'next/head'
 
 export default function Layout(props) {
   return (
-  	<div>
+  	<React.Fragment>
       <Head>
         <title>Frederik Winther</title>
       </Head>
@@ -19,6 +19,6 @@ export default function Layout(props) {
           }
       `}
       </style>
-    </div>
+    </React.Fragment>
   )
 }

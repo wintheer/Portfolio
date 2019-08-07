@@ -7,20 +7,12 @@ import Projects from './projects'
 import Contact from './contact'
 
 export default () => (
-	<div className="container">
+	<React.Fragment>
     	<Layout/>
     	<Front/>
     	
     	<Skills/>
     	<Projects/>
     	<Contact/>
-
-    	<style jsx>{`
-    		.container {
-            	
-            	height: 100%;
-    		}
-    		`}
-		</style>
-    </div>
+    </React.Fragment>
 )
