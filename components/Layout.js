@@ -6,9 +6,13 @@ export default function Layout(props) {
 	    <Navigation/>
 	    <style jsx global> {`
           body {
-            margin-top: 60px;
-            margin-left: 0;
-            margin-right: 0;
+            margin: 0;
+            height: 100%;
+          }
+
+          html {
+          	margin: 60px 0 0 0;
+          	height: 100%;
           }
       `}
       </style>

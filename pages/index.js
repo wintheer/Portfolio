@@ -6,7 +6,7 @@ import Projects from './projects'
 import Contact from './contact'
 
 export default () => (
-	<div>
+	<div className="outer">
     	<Layout/>
     	<Front/>
     	<Skills/>
@@ -14,10 +14,10 @@ export default () => (
     	<Contact/>
 
     	<style jsx>{`
-				Skills {
-					
-				}
-
+    		.outer {
+            	
+            	height: 100%;
+    		}
     		`}
 		</style>
     </div>
