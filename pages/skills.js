@@ -4,7 +4,7 @@ class Skills extends React.Component {
 
 	render() {
 		return (
-			<div id="skills" className="skills_container">
+			<div name="skills" className="skills_container">
 				<div className="designer_container">
 					<h1>Designer</h1>
 					<ul>
@@ -85,84 +85,84 @@ class Skills extends React.Component {
 						<li>Git</li>
 					</ul>
 				</div>
-		
+
 				<style jsx>{`
-						h1 {
-							margin: 10 0 0 0;
-							text-align: center;
-						}
-		
-						ul {
-							list-style-type: none;
-		
-						}
-		
-						li {
-							
-							list-style-type: none;
-							margin-top: 10px;
-							font-size: 130%;
-						}
-		
-						.skills_container {
-							height: 100%;
-							background: #0c0c0c;
-							padding-top: 4vw;
-							padding-left: 15%;
-							padding-right: 15%;
-							display: grid;
-							grid-template-columns: repeat(3, 1fr);
-							grid-template-rows: repeat(8, 4vw);
-							grid-gap: 20px;
-						}
-		
-						.ProjectItem {
-							height: 100%;
-							width: 100%;
-							background: grey;
-							object-fit: cover;
-						}
-		
-						.designer_container {
-							grid-column-start: 1;
-							grid-column-end: 2;
-							grid-row-start: 1;
-							grid-row-end: 8;
-							background: grey;
-						}
-		
-						.frontend_container {
-							grid-column-start: 2;
-							grid-column-end: 3;
-							grid-row-start: 1;
-							grid-row-end: 5;
-							background: grey;
-						}
-		
-						.backend_container {
-							grid-column-start: 2;
-							grid-column-end: 3;
-							grid-row-start: 5;
-							grid-row-end: 8;
-							background: grey;
-						}
-		
-						.tools_container {
-							grid-column-start: 3;
-							grid-column-end: 4;
-							grid-row-start: 1;
-							grid-row-end: 4;
-							background: grey;
-						}
-		
-						.triathlon_container {
-							background: grey;
-							grid-row-start: 4;
-							grid-row-end: 8;
-						}
-		
-					`}
-				</style>
+					h1 {
+						color: black;
+						margin: 10 0 0 0;
+						text-align: center;
+					}
+					
+					ul {
+						list-style-type: none;
+					
+					}
+					
+					li {
+						
+						list-style-type: none;
+						margin-top: 10px;
+						font-size: 130%;
+					}
+					
+					.skills_container {
+						height: 100%;
+						background: #0c0c0c;
+						padding-top: 4vw;
+						padding-left: 15%;
+						padding-right: 15%;
+						display: grid;
+						grid-template-columns: repeat(3, 1fr);
+						grid-template-rows: repeat(8, 4vw);
+						grid-gap: 20px;
+					}
+					
+					.ProjectItem {
+						height: 100%;
+						width: 100%;
+						background: grey;
+						object-fit: cover;
+					}
+					
+					.designer_container {
+						grid-column-start: 1;
+						grid-column-end: 2;
+						grid-row-start: 1;
+						grid-row-end: 8;
+						background: grey;
+					}
+					
+					.frontend_container {
+						grid-column-start: 2;
+						grid-column-end: 3;
+						grid-row-start: 1;
+						grid-row-end: 5;
+						background: grey;
+					}
+					
+					.backend_container {
+						grid-column-start: 2;
+						grid-column-end: 3;
+						grid-row-start: 5;
+						grid-row-end: 8;
+						background: grey;
+					}
+					
+					.tools_container {
+						grid-column-start: 3;
+						grid-column-end: 4;
+						grid-row-start: 1;
+						grid-row-end: 4;
+						background: grey;
+					}
+					
+					.triathlon_container {
+						background: grey;
+						grid-row-start: 4;
+						grid-row-end: 8;
+					}
+				`}</style>
+
 			</div>
 		)
 	}

@@ -5,17 +5,16 @@ class Front extends React.Component {
 	render() {
 		return (
 			<div id="front" className="front_container">
-	
 				<div className="image_container">
-					<div className="image"></div>
+					<img className="image" src="/static/Front_image.png"/>
 					<h1>Designer, Full Stack Developer <br/> & Triathlete</h1>
 				</div>
-				
+
 				<style jsx>{`
 					.front_container {
 						height: 100%;
 					}
-	
+					
 					.image_container {
 						position: relative;
 						background: black;
@@ -25,10 +24,9 @@ class Front extends React.Component {
 						/* align-items: center; */
 						z-index: -1;
 					}
-	
+					
 					.image {
 						opacity: .3;
-						background-image: url("../static/Front_image.png");
 						position: absolute;
 						width: 100%;
 						height: 100%;
@@ -38,8 +36,8 @@ class Front extends React.Component {
 						background-size: cover;
 						filter: blur(1px);
 					}
-	
-					h1 {
+					
+					#front h1 {
 						font-size: 300%;
 						position: relative;
 						text-align: center;
@@ -49,8 +47,9 @@ class Front extends React.Component {
 						z-index: 1;
 						color: white;
 					}
-				`}
-				</style>
+				
+				`}</style>
+
 			</div>
 	  	)
 	}

@@ -96,7 +96,7 @@ class Projects extends React.Component {
 					}
 	
 					.text_container {
-						padding-left: 20px;
+						padding-left: 0;
 					}
 				`}
 				</style>

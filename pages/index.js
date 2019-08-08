@@ -1,4 +1,4 @@
-import Layout from '../components/Layout.js'
+import Layout from '../components/layouts/Layout.js'
 import Link from 'next/link'
 import Front from './front'
 import About from './about'
@@ -7,12 +7,11 @@ import Projects from './projects'
 import Contact from './contact'
 
 export default () => (
-	<React.Fragment>
-    	<Layout/>
+	<Layout>
     	<Front/>
     	
     	<Skills/>
     	<Projects/>
     	<Contact/>
-    </React.Fragment>
+  </Layout>
 )
