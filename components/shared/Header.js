@@ -2,6 +2,10 @@ import Link from 'next/link'
 import React from 'react'
 import {animateScroll, Events, Element, Link as ScrollLink, scroller} from 'react-scroll'
 
+import {Button} from 'reactstrap'
+
+import 'bootstrap/dist/css/bootstrap.min.css'
+
 class Header extends React.Component {
 
 	componentDidMount() {
@@ -41,8 +45,9 @@ class Header extends React.Component {
 						</picture>
 							
 						</div>
-		
+
 						<div className="navbar_right">
+							<Button color="danger">Test</Button>
 							<a>About</a>
 							<a onClick={() => this.scrollToElement('skills')}>Skills</a>
 							<a onClick={() => this.scrollToElement('projects')}>Projects</a>
