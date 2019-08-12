@@ -1,10 +1,7 @@
 import Link from 'next/link'
 import React from 'react'
-import {animateScroll, Events, Element, Link as ScrollLink, scroller} from 'react-scroll'
+import { animateScroll, Events, Element, Link as ScrollLink, scroller } from 'react-scroll'
 
-import {Button} from 'reactstrap'
-
-import 'bootstrap/dist/css/bootstrap.min.css'
 
 class Header extends React.Component {
 
@@ -39,15 +36,14 @@ class Header extends React.Component {
 					<div className="navbar_container">
 						<div className="navbar_left">
 							<picture onClick={() => animateScroll.scrollToTop()}>
-								<source media="(min-width:900px" srcSet="../static/Logo_desktop.png"></source>
-								<source media="(min-width:500px" srcSet="../static/Logo_mobile.png"></source>
+								<source media="(min-width:900px" srcSet="../static/images/Logo_desktop.png"></source>
+								<source media="(min-width:500px" srcSet="../static/images/Logo_mobile.png"></source>
 								<img className="logo" src="" alt="Frederik Winther"/>
 						</picture>
 							
 						</div>
 
 						<div className="navbar_right">
-							<Button color="danger">Test</Button>
 							<a>About</a>
 							<a onClick={() => this.scrollToElement('skills')}>Skills</a>
 							<a onClick={() => this.scrollToElement('projects')}>Projects</a>

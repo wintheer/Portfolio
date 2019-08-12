@@ -6,7 +6,7 @@ class Front extends React.Component {
 		return (
 			<div id="front" className="front_container">
 				<div className="image_container">
-					<img className="image" src="/static/Front_image.png"/>
+					<img className="image" src="/static/images/Front_image.png"/>
 					<h1>Designer, Full Stack Developer <br/> & Triathlete</h1>
 				</div>
 
